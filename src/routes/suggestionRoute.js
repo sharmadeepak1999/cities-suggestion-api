@@ -32,7 +32,7 @@ router.get("/", [
         return
     }
 
-    const query = req.query.q
+    const query = req.query.q.toLowerCase()
     const lat = req.query.latitude
     const long = req.query.longitude
 
